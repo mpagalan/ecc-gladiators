@@ -1,0 +1,51 @@
+<h1>Game#fight</h1>
+<p>Find me in app/views/game/fight.html.erb</p>
+<div>
+  <h1>All the Brave Gladiators</h1>
+  <% @gladiators.each do |gladiator| %>
+    <p>
+      <%= gladiator.name%> 
+      <%= link_to 'Edit Gladiator Stats',  edit_gladcrud_path(gladiator.id) %> <br />
+      <%= link_to 'Feed Gladiator to Lions',  gladcrud_path(gladiator.id), :method => :delete %>
+    </p>
+  <% end %>   <!--run but wont display -->
+  <%= link_to 'Add a Gladiator', new_gladcrud_path %> <br />
+</div>
+
+
+
+
+<%= button_to "Gladiators Draw Lots To Fight", :action =>"select_players" %>
+<% if @player1 && @player2 %>
+  <p><%= @player1.name %> vs <%= @player2.name %> </p>
+  <%= button_to "Fight", :action =>"results", :player1=>@player1.id, :player2=>@player2.id %>
+<% end %>
+
+
+<br />
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+  
+

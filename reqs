@@ -1,0 +1,35 @@
+- create resources / records models
+
+Models:
+- players
+- fight: id, player1, player2
+
+
+Gladiator selection button (random select from database)
+- use random function or ajax to get players    -2
+
+
+
+Fight button
+- processes win
+- stores fight in model / db
+
+
+List of players
+
+Add new player - redirects to new player entry page
+
+NEwplayer page
+Strength
+intelligence 
+agility
+damage
+
+
+
+Edit  / delete
+
+
+
+
+

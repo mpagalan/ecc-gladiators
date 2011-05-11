@@ -1,0 +1,2 @@
+module GladcrudHelper
+end

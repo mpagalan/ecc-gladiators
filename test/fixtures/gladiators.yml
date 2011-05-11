@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  strength: 1
+  intelligence: 1
+  agility: 1
+  damage: 1
+
+two:
+  name: MyString
+  strength: 1
+  intelligence: 1
+  agility: 1
+  damage: 1

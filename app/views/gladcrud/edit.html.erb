@@ -1,0 +1,18 @@
+<h1>Gladcrud#edit</h1>
+<p>Find me in app/views/gladcrud/edit.html.erb</p>
+
+<h1>Edit Gladiator</h1>
+<%= form_tag "/gladcrud/update/#{@gladitor.id}", :method => :put  do %>
+  <label>Name</label><br/>
+  <%= text_field :gladiator, :name , :value => @gladiator.name %><br/>
+  <label>Strength</label><br/>
+  <%= text_field :gladiator, :strength %><br/>
+  <label>Int</label><br/>
+  <%= text_field :gladiator, :intelligence %><br/>
+  <label>Agility</label><br/>
+  <%= text_field :gladiator, :agility %><br/>
+  <label>Damage</label><br/>
+  <%= text_field :gladiator, :damage %><br/>
+
+  <div><%= submit_tag 'Save' %><%= link_to 'Cancel', '#' %></div>
+<% end %>

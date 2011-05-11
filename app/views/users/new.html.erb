@@ -1,0 +1,36 @@
+<h1>Sign Up</h1>
+<p>Find me in app/views/users/new.html.erb</p>
+
+<%= form_for @user do |f| %>
+  <% if @user.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @user.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+  </div>
+<% end %>
+<p>
+  <%= f.label :email %><br />
+  <%= f.text_field :email %>
+</p>
+<p>
+  <%= f.label :password %><br />
+  <%= f.password_field :password %>
+</p>
+<p>
+  <%= f.label :password_confirmation %>
+</p>
+<p class="button"><%= f.submit %></p>
+
+<%= link_to 'Proceed to Arena',  "game/fight" %>
+
+<% end %>
+
+
+  
+  
+      
+      
